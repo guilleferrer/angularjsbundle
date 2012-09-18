@@ -1,13 +1,13 @@
 {
     "name": "guilleferrer/angularjsbundle",
     "type": "symfony-bundle",
-    "description": "Symfony2 bundle for Angular js integration" 
+    "description": "Symfony2 bundle for Angular js integration" ,
     "keywords": ["angular.js", "symfony", "javascript"],
     "homepage": "https://bitbucket.org/guilleferrer/angularjsbundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Guillermo Ferrer"
+            "name": "Guillermo Ferrer",
             "email": "guilleferrer@gmail.com",
             "homepage": "http://guillermo.ferrermorego.com"
         }
