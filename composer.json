@@ -20,7 +20,7 @@
         "guilleferrer/AngularJSBundle": "master"
     },
     "autoload": {
-        "psr-0": { "Udf\\AngularJSBundle" }
+        "psr-0": { "Udf\\AngularJSBundle" : "" }
     },
     "target-dir": "Udf/AngularJSBundle"
 }
