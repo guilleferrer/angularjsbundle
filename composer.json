@@ -17,7 +17,7 @@
         "symfony/framework-bundle":  ">=2.0.0"
     },
     "replace": {
-        "guilleferrer/AngularJSBundle": "master"
+        "guilleferrer/AngularJSBundle": "dev-master"
     },
     "autoload": {
         "psr-0": { "Udf\\AngularJSBundle" }
