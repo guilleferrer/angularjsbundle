@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% block htmlhead %}
+<html ng-app > {# ng-app="myApp" #}
+{% endblock %}
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block javascripts %}
+            {% javascripts  '@UdfAngularJSBundle/Resources/public/js/angular.js'
+                            '@UdfConfiguratorFrontendBundle/Resources/public/angular-ui/js/angular-ui.js'
+               output="comb/js/angularsrc.js"
+            %}
+                <script src="{{ asset_url }}" type="text/javascript" ></script>
+            {% endjavascripts %}
+
+        {% endblock %}
+    </head>
+    <body ng-controller="MainCtrl">
+        {% block body %}{% endblock %}
+        {% block modal %}{% endblock %}
+    </body>
+</html>
