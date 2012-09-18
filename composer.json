@@ -1,0 +1,26 @@
+{
+    "name": "guilleferrer/angularjsbundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 bundle for Angular js integration" 
+    "keywords": ["angular.js", "symfony", "javascript"],
+    "homepage": "https://bitbucket.org/guilleferrer/angularjsbundle"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guillermo Ferrer"
+            "email": "guilleferrer@gmail.com",
+            "homepage": "http://guillermo.ferrermorego.com"
+        }
+    ],
+    "require": {
+        "php":                       ">=5.3.2",
+        "symfony/framework-bundle":  ">=2.0.0"
+    },
+    "replace": {
+        "guilleferrer/AngularJSBundle": "master"
+    },
+    "autoload": {
+        "psr-0": { "Udf\\AngularJSBundle" }
+    },
+    "target-dir": "Udf/AngularJSBundle"
+}
