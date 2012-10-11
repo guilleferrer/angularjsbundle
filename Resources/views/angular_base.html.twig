@@ -9,6 +9,7 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         {% block javascripts %}
             {% javascripts  '@UdfAngularJSBundle/Resources/public/js/angular.js'
+                            '@UdfAngularJSBundle/Resources/public/angular-ui/js/angular-ui.js'
                output="comb/js/angularsrc.js"
             %}
                 <script src="{{ asset_url }}" type="text/javascript" ></script>
