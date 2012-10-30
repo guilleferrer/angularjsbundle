@@ -4948,6 +4948,9 @@ function LocationUrl(url, pathPrefix, appBaseUrl) {
 
 
   this.$$rewriteAppUrl = function(absoluteLinkUrl) {
+    if (absoluteLinkUrl.baseVal != null) {
+        absoluteLinkUrl = absoluteLinkUrl.baseVal;
+    }
     if(absoluteLinkUrl.indexOf(appBaseUrl) == 0) {
       return absoluteLinkUrl;
     }
@@ -5010,6 +5013,9 @@ function LocationHashbangUrl(url, hashPrefix, appBaseUrl) {
   };
 
   this.$$rewriteAppUrl = function(absoluteLinkUrl) {
+    if (absoluteLinkUrl.baseVal != null) {
+        absoluteLinkUrl = absoluteLinkUrl.baseVal;
+    }
     if(absoluteLinkUrl.indexOf(appBaseUrl) == 0) {
       return absoluteLinkUrl;
     }
@@ -5209,6 +5215,9 @@ function LocationHashbangInHtml5Url(url, hashPrefix, appBaseUrl, baseExtra) {
 
 
   this.$$rewriteAppUrl = function(absoluteLinkUrl) {
+    if (absoluteLinkUrl.baseVal != null) {
+        absoluteLinkUrl = absoluteLinkUrl.baseVal;
+    }
     if (absoluteLinkUrl.indexOf(appBaseUrl) == 0) {
       return appBaseUrl + baseExtra + '#' + hashPrefix  + absoluteLinkUrl.substr(appBaseUrl.length);
     }
